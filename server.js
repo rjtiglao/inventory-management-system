@@ -115,8 +115,12 @@ app.post("/api/additem", upload.single("selectedFile"), (req, res) => {
   let location = req.body.location;
   let description = req.body.description;
   let part_number = req.body.part_number;
+  // req.file retrieves file meta data.
+  let newfileName = req.file.filename;
+  let newfileSize = req.file.size;
+  let newfileType = req.file.mimetype;
 
-  console.log(newFilename + " has been uploaded.");
+  console.log(newfileName);
 
   console.log(part_number);
 
@@ -130,7 +134,10 @@ app.post("/api/additem", upload.single("selectedFile"), (req, res) => {
       quantity: quantity,
       location: location,
       reworks: software,
-      part_number: part_number
+      part_number: part_number,
+      image_file_name: newfileName,
+      image_content_type: newfileType,
+      image_file_size: newfileSize
     },
     function(err, res) {
       if (err) throw err;
