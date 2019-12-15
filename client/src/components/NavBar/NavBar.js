@@ -8,7 +8,7 @@ const List = styled.ul`
   background-color: #212d32;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
   color: #b8c7cd;
 
@@ -35,7 +35,7 @@ const NavBar = styled.nav`
   display: grid;
   grid-template-columns: 200px 1fr 1fr;
   grid-template-rows: 1fr;
-  position: absolute;
+  position: fixed;
   background-color: #3c8cbc;
   color: white;
   transition: 0.5s;

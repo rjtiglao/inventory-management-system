@@ -45,17 +45,7 @@ class Form extends Component {
 
   render(){
     return(
-      <FormStyle onSubmit={this.handleSubmit} >
-        <label htmlFor="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Name"/>
 
-        <label htmlFor="email">Email</label>
-        <input id="email" name="email" type="text" placeholder="Email"/>
-        
-        <label htmlFor="attending">Attending</label>
-        <input id="attending" name="attending" type="boolean" placeholder="Attending"/>
-        <Button >Submit</Button>
-      </FormStyle>
     )
   }
 }

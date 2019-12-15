@@ -9,6 +9,8 @@ const MainContainer = styled.div`
   margin-left: ${props => props.marginLeft || "0px"};
   background-color: ${props => props.backgroundColor || ""};
   height: ${props => props.bgHeight || ""};
+  width: 100%;
+  position: ${props => props.conPosition || ""};
 `;
 
 export default MainContainer;

@@ -15,6 +15,7 @@ import BuildsPage from "./views/Builds/Builds";
 import ProjectPage from "./views/Projects/Projects";
 import SettingsPage from "./views/Settings/Settings";
 import FourOhFour from "./views/NotFound/404";
+import AddItemPage from "./views/Forms/AddItem/AddItem";
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
           <Route exact path="/designs" component={DesignsPage} />
           <Route exact path="/builds" component={BuildsPage} />
           <Route exact path="/settings" component={SettingsPage} />
+          <Route exact path="/additem" component={AddItemPage} />
           {/* If user routes to anything other than the routes above, it will route to 404 page */}
           <Route component={FourOhFour} />
         </Switch>

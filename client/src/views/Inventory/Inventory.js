@@ -14,7 +14,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import PageBar from "../../components/PageBar/PageBar";
 import "./style.css";
 import DataTable from "../../components/DataTable/DataTable";
-import TestDataTable from "../../components/TestTable/TestTable";
+import TestDataTable from "../../components/DataTable/Sandbox/SortingTable";
 import styled from "styled-components";
 // import Fade from "react-reveal/Fade";
 
@@ -43,15 +43,19 @@ const InventoryPage = () => {
           bgHeight="100%"
           bgWidth="100%"
         >
-          <PageBar text="Inventory" />
           <ContentContainer
             backgroundColor="white"
-            bgHeight="50px"
-            bgWidth="50px"
+            MaxHeight="80%;"
+            bgWidth="80%"
+            marginLeft="50px;"
+            marginTop="50px"
+            MaxWidth="90%;"
           >
-            {/* <DataTable></DataTable> */}
+            {/* <TestDataTable></TestDataTable> */}
+            <PageBar text="Inventory" url="/" view="additem" />
             <TestDataTable></TestDataTable>
           </ContentContainer>
+          <a href="/additem">Add New Item</a>
         </ContentContainer>
       </ContentContainer>
     </MainContainer>

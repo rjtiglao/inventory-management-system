@@ -7,6 +7,8 @@ const ContentContainer = styled.div`
   grid-template-columns: ${props => props.gridTemplateColumns || ""};
   grid-gap: ${props => props.gridGap || ""};
   margin-left: ${props => props.marginLeft || ""};
+  margin-right: ${props => props.marginRight || ""};
+  margin-top: ${props => props.marginTop || ""};
   background-color: ${props => props.backgroundColor || ""};
   height: ${props => props.bgHeight || ""};
   width: ${props => props.bgWidth || ""};
@@ -17,7 +19,10 @@ const ContentContainer = styled.div`
   border-radius: ${props => props.borderRadius || ""};
   position: ${props => props.conPosition || ""};
   padding: ${props => props.Padding || ""};
-
+  min-height: ${props => props.MinHeight || ""};
+  max-height: ${props => props.MaxHeight || ""};
+  max-width: ${props => props.MaxWidth || ""};
+  position: ${props => props.Position || ""};
   h1 {
     color: white;
   }
